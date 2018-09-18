@@ -19,14 +19,14 @@ jobs:
           command: npm install
       # run verify and then save cache.
       # this ensures that the Cypress verified status is cached too
-      - run: npm run cy:verify
+      ##- run: npm run cy:verify
       # save new cache folder if needed
       - save_cache:
           key: cache-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - ~/.npm
             - ~/.cache
-      - run: npm run types
+      ##- run: npm run types
       # all other test jobs will run AFTER this build job finishes
       # to avoid reinstalling dependencies, we persist the source folder "app"
       # and the Cypress binary to workspace, which is the fastest way
