@@ -31,7 +31,8 @@
     "cy:run": "cypress run", 
     "e2e": "cypress run", 
     "e2e chrome": "cypress run --browser chrome", 
-    "e2e:record":"cypress run --record"
+    "e2e:record":"cypress run --record",
+    "types": "tsc --noEmit"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
