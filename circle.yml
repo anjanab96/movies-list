@@ -1,5 +1,5 @@
 defaults: &defaults
-  working_directory: ~/movies-list
+  working_directory: C:\Users\Anjana Balamourougan\Documents\GitHub\movies-list
   docker:
     - image: cypress/browsers:chrome67
 
