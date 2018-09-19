@@ -37,6 +37,7 @@ jobs:
             - app
             - .cache/Cypress
 
+
   1x-electron:
     <<: *defaults
     steps:
@@ -60,7 +61,7 @@ jobs:
       - run:
           command: npm start
           background: true
-      - run: cypress run --record --key 514b1d26-7e72-410a-a281-ca2b35243b67 --browser chrome
+      - run: cypress run --record --key 514b1d26-7e72-410a-a281-ca2b35243b67 
 
 workflows:
   version: 2
