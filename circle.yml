@@ -48,7 +48,7 @@ jobs:
           command: npm start
           background: true
       # run all tests and pass group name (should be "1x-electron" in this case)
-      - run: cypress run --record --key 514b1d26-7e72-410a-a281-ca2b35243b67
+      - run: npx cypress run --record --key 514b1d26-7e72-410a-a281-ca2b35243b67
 
 
   2x-chrome:
@@ -61,7 +61,7 @@ jobs:
       - run:
           command: npm start
           background: true
-      - run: cypress run --record --key 514b1d26-7e72-410a-a281-ca2b35243b67 
+      - run: npx cypress run --record --key 514b1d26-7e72-410a-a281-ca2b35243b67 
 
 workflows:
   version: 2
