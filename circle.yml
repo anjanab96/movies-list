@@ -1,5 +1,5 @@
 defaults: &defaults
-  working_directory: ~/src
+  working_directory: ~/movies-list
   docker:
     - image: cypress/browsers:chrome67
 
