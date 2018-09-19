@@ -47,7 +47,8 @@ jobs:
           command: npm start
           background: true
       # run all tests and pass group name (should be "1x-electron" in this case)
-      - run: npm run e2e:record -- --group $CIRCLE_JOB
+      - run: cypress run --record --key 514b1d26-7e72-410a-a281-ca2b35243b67
+
 
   2x-chrome:
     <<: *defaults
@@ -59,7 +60,7 @@ jobs:
       - run:
           command: npm start
           background: true
-      - run: npm run e2e:record -- --parallel --group $CIRCLE_JOB --browser chrome
+      - run: cypress run --record --key 514b1d26-7e72-410a-a281-ca2b35243b67 --browser chrome
 
 workflows:
   version: 2
