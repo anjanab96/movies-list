@@ -26,7 +26,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build", 
+    "cy:verify" : "cypress verify", 
+    "cy:run": "cypress run", 
+    "e2e": "cypress run", 
+    "e2e chrome": "cypress run --browser chrome", 
+    "e2e:record":"cypress run --record"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
